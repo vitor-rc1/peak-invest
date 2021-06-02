@@ -21,31 +21,6 @@ namespace peak_invest_back.Service
             };
         }
 
-        public static List<KeyValuePair<int, string>> GetAll => Users;
-
         public static KeyValuePair<int, string> Get(int id) => Users.FirstOrDefault(user => user.Key == id);
-
-        public static void Add(User user)
-        {
-            user.Id = nextId++;
-            Users.Add(new KeyValuePair<int, string>(user.Id, user.Name));
-        }
-
-        public static void Delete(int id)
-        {
-            var user = Get(id);
-            if (user.Value is null)
-                return;
-            Users.Remove(user);
-        }
-
-        public static void Update(User user)
-        {
-            var index = Users.FindIndex(u => u.Key == user.Id);
-            if (index == -1)
-                return;
-
-            Users[index] = new KeyValuePair<int, string>(user.Id, user.Name);
-        }
     }
 }

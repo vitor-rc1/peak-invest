@@ -7,6 +7,7 @@ import { CalculateComponent } from './components/calculate/calculate.component';
 const routes: Routes = [
   { path: 'user', component: UserComponent},
   { path: 'calculate', component: CalculateComponent},
+  { path: '', redirectTo: '/user', pathMatch: 'full' },
 ];
 
 @NgModule({

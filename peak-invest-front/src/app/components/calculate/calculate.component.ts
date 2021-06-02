@@ -16,21 +16,16 @@ export class CalculateComponent implements OnInit {
   ) { }
 
   calculate: Calculate = {
-    installments: 0,
+    installments: 1,
     value: 0,
   };
-
-  value: string =  '';
-  installments: string = '';
+  
   totalValue: TotalValue | undefined;
 
   ngOnInit(): void {
   }
 
   calculateTotalValue(): void {
-    this.calculate.value = Number(this.value);
-    this.calculate.installments = Number(this.installments);
-    console.log(this.calculate);
     this.calculateService.calculateTotalValue(this.calculate)
       .subscribe(total => this.totalValue = total);
   }

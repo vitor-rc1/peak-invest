@@ -1,13 +1,11 @@
 <div class="user-component">
   <h2>Buscar usuário</h2>
   <div class="search">
-      <input
-          type="number" 
-          min="1" 
-          placeholder="Digite o ID do usuário"
-          #userId
-      >
-      <button (click)="getUser(userId.value)">Buscar usuário</button>
+    <mat-form-field class="example-full-width">
+      <mat-label>Quantidade de parcelas</mat-label>
+      <input #userId min="1" type="number" matInput>
+    </mat-form-field>
+    <button (click)="getUser(userId.value)">Buscar usuário</button>
   </div>
   
   <div *ngIf="user" class="user">
