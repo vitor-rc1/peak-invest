@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { CalculateService } from '../services/calculate.service';
+import { CalculateService } from '../../services/calculate.service';
 
-import { Calculate } from '../interfaces/Calculate';
-import { TotalValue } from '../interfaces/TotalValue';
+import { Calculate } from '../../interfaces/Calculate';
+import { TotalValue } from '../../interfaces/TotalValue';
 
 @Component({
   selector: 'app-calculate',

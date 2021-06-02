@@ -1,15 +1,17 @@
 <div class="calculate">
   <h2>Simulação de empréstimo</h2>
-  <div>
+  <div class="form">
       <label for="value">Valor da parcela</label>
       <input [(ngModel)]="value" type="text" id="value" required>
   
       <label for="installments">Digite a quantidade de parcelas</label>
-      <input [(ngModel)]="installments" type="text" id="installments" required>
+      <input [(ngModel)]="installments" min="1" type="number" id="installments" required>
   
       <button (click)="calculateTotalValue()">Calcular</button>
-  </div>
-  <div *ngIf="totalValue">
-    {{totalValue.total | currency:'BRL'}}
-  </div>
+  </div>  
+</div>
+
+<div *ngIf="totalValue" class="total">
+  <h3>Total a pagar</h3>
+  {{totalValue.total | currency:'BRL'}}
 </div>

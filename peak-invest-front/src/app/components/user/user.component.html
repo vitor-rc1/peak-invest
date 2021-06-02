@@ -1,0 +1,17 @@
+<div class="user-component">
+  <h2>Buscar usuário</h2>
+  <div class="search">
+      <input
+          type="number" 
+          min="1" 
+          placeholder="Digite o ID do usuário"
+          #userId
+      >
+      <button (click)="getUser(userId.value)">Buscar usuário</button>
+  </div>
+  
+  <div *ngIf="user" class="user">
+      <p>Id: <span>{{user.key}}</span></p>
+      <p>Nome: <span>{{user.value}}</span></p>
+  </div>
+</div>

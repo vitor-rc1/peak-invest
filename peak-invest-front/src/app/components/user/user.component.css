@@ -1,0 +1,22 @@
+.user-component {
+  text-align: center;
+  margin: auto;
+}
+
+.user {
+  font-size: 1.2rem;
+  width: fit-content;
+  background-color: white;
+  margin: 20px auto 0;
+  padding: 5px 30px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
+
+.user p {
+  font-weight: 700;
+}
+
+.user p span{
+  font-weight: normal;
+}

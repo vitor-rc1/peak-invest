@@ -1,4 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
-body {
+html, body { height: 100%; }
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
   background-color: #f6f2e1;
+}
+
+input {
+  color: #364150;
+  border: 1px solid #dde3ec;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+button {
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #3f525c;  
+  font-size: 1.2rem;
+  color: #fff;
+
 }
