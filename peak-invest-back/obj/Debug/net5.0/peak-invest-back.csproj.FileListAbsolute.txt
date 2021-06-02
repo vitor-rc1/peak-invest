@@ -21,3 +21,5 @@ C:\Users\VITORRODRIGUESDACONC\Documents\0.Vitor Rodrigues\Testes\peak-invest-bac
 C:\Users\VITORRODRIGUESDACONC\Documents\0.Vitor Rodrigues\Testes\peak-invest-back\obj\Debug\net5.0\ref\peak-invest-back.dll
 C:\Users\VITORRODRIGUESDACONC\Documents\0.Vitor Rodrigues\Testes\peak-invest-back\obj\Debug\net5.0\peak-invest-back.pdb
 C:\Users\VITORRODRIGUESDACONC\Documents\0.Vitor Rodrigues\Testes\peak-invest-back\obj\Debug\net5.0\peak-invest-back.genruntimeconfig.cache
+C:\Users\VITORRODRIGUESDACONC\Documents\0.Vitor Rodrigues\Testes\peak-invest-back\bin\Debug\net5.0\peak-invest-back.Views.dll
+C:\Users\VITORRODRIGUESDACONC\Documents\0.Vitor Rodrigues\Testes\peak-invest-back\obj\Debug\net5.0\peak-invest-back.csproj.CopyComplete

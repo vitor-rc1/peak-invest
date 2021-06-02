@@ -1,0 +1,30 @@
+.header {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: center;
+}
+
+a {
+  background-color: #3f525c;
+  border-radius: 15px;
+  padding: 20px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  /* display: inline-block; */
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  min-width: 70px;
+  margin: 0 0 0 15px;
+  box-sizing: border-box;
+}
+
+a:hover {
+  background-color: #000;
+}
+
+.logo {
+  max-width: 40%;
+}

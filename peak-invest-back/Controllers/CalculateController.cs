@@ -13,9 +13,11 @@ namespace peak_invest_back.Controllers
     public class CalculateController : ControllerBase
     {
         [HttpPost]
-        public ActionResult<double> Calculate(Calculate calculate)
+        public ActionResult Calculate(Calculate calculate)
         {
-            return CalculateService.calculateTotalValue(calculate);
+            double totalValue = CalculateService.calculateTotalValue(calculate);
+            var response = new { total = totalValue };
+            return Ok(response);
         }
     }
 }

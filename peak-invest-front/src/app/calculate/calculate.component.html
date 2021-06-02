@@ -1,0 +1,15 @@
+<div class="calculate">
+  <h2>Simulação de empréstimo</h2>
+  <div>
+      <label for="value">Valor da parcela</label>
+      <input [(ngModel)]="value" type="text" id="value" required>
+  
+      <label for="installments">Digite a quantidade de parcelas</label>
+      <input [(ngModel)]="installments" type="text" id="installments" required>
+  
+      <button (click)="calculateTotalValue()">Calcular</button>
+  </div>
+  <div *ngIf="totalValue">
+    {{totalValue.total | currency:'BRL'}}
+  </div>
+</div>

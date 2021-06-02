@@ -1,0 +1,14 @@
+<h2>Buscar usuário</h2>
+<div>
+    <input
+        type="number" 
+        min="1" 
+        placeholder="Digite o ID do usuário"
+        #userId
+    >
+    <button (click)="getUser(userId.value)">Buscar usuário</button>
+</div>
+
+<div *ngIf="user">
+    <p>{{user.key}}: <span>{{user.value}}</span></p>
+</div>
