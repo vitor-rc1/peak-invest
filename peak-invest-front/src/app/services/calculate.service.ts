@@ -5,6 +5,7 @@ import { Observable, of } from 'rxjs'
 
 import { Calculate } from '../interfaces/Calculate';
 import { TotalValue } from '../interfaces/TotalValue';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,7 @@ export class CalculateService {
     private http: HttpClient,
   ) { }
 
-  private URL = 'http://localhost:30006/calculate'
+  private URL = `${environment.apiUrl}/calculate`
 
   private handleError<T>(operation = 'operation', result?: T){
     return (error: any): Observable<T> => {

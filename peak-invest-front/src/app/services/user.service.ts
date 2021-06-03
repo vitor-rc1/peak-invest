@@ -4,6 +4,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 import { Observable, of } from 'rxjs'
 
 import { User } from '../interfaces/User';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +15,7 @@ export class UserService {
     private http: HttpClient,
   ) { }
 
-  private URL = 'http://localhost:30006/user'
+  private URL = `${environment.apiUrl}/user`
 
   private handleError<T>(operation = 'operation', result?: T){
     return (error: any): Observable<T> => {

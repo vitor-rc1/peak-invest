@@ -14,9 +14,10 @@
 
     <button (click)="calculateTotalValue()">Calcular</button>
   </div>  
-</div>
 
-<div *ngIf="totalValue" class="total">
-  <h3>Total a pagar</h3>
-  {{totalValue.total | currency:'BRL'}}
+  <div *ngIf="totalValue" class="total">
+    <h3>Total a pagar</h3>
+    {{totalValue.total | currency:'BRL'}}
+  </div>
+  
 </div>
