@@ -43,4 +43,4 @@ installments:   number
 
 Desenvolvido por: [Vitor](https://www.linkedin.com/in/vitorrodrig/)
 
-Projeto gerado em [ASP.NET](https://dotnet.microsoft.com/apps/aspnet/apis) version 12.0.2.
+Projeto gerado em [ASP.NET](https://dotnet.microsoft.com/apps/aspnet/apis)
